@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/stat_root"
+    android:orientation="vertical"
+    tools:context=".Statistics.Statistics">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:id="@+id/l_normal"
+                                android:background="#b3e5fc"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="20dp"
+                                    android:src="@drawable/ic_normal"
+                                    android:tint="@color/green" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1"
+                                    android:text="Normal"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold"
+                                    android:typeface="monospace" />
+
+                                <com.github.lzyzsd.circleprogress.ArcProgress
+                                    android:id="@+id/arc_progress_normal"
+                                    app:arc_text_size="25sp"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:background="#fff"
+                                    app:arc_bottom_text="Granted"
+                                    app:arc_finished_color="@color/green"
+                                    app:arc_max="4"
+                                    app:arc_progress="2"
+                                    app:arc_suffix_text=" "
+                                    app:arc_unfinished_color="#fff" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <com.github.lzyzsd.circleprogress.ArcProgress
+                                    android:id="@+id/arc_progress_dangerous"
+                                    app:arc_text_size="25sp"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:background="#fff"
+                                    app:arc_bottom_text="Granted"
+                                    app:arc_finished_color="@color/green"
+                                    app:arc_max="4"
+                                    app:arc_progress="2"
+                                    app:arc_suffix_text=" "
+                                    app:arc_unfinished_color="#fff" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1"
+                                    android:text="Dangerous"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold"
+                                    android:typeface="monospace" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:background="#fff59d"
+                                android:id="@+id/l_dang"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="20dp"
+                                    android:src="@drawable/ic_dangerous"
+                                    android:tint="@color/red" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:background="#a5d6a7"
+                                android:id="@+id/l_sig"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="20dp"
+                                    android:src="@drawable/ic_signature"
+                                    android:tint="@color/orrange" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1"
+                                    android:text="Signature"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold"
+                                    android:typeface="monospace" />
+
+                                <com.github.lzyzsd.circleprogress.ArcProgress
+                                    android:id="@+id/arc_progress_signature"
+                                    app:arc_text_size="25sp"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:background="#fff"
+                                    app:arc_bottom_text="Granted"
+                                    app:arc_finished_color="@color/green"
+                                    app:arc_max="4"
+                                    app:arc_progress="2"
+                                    app:arc_suffix_text=" "
+                                    app:arc_unfinished_color="#fff" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <com.github.lzyzsd.circleprogress.ArcProgress
+                                    android:id="@+id/arc_progress_moderate"
+                                    app:arc_text_size="25sp"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:background="#fff"
+                                    app:arc_bottom_text="Granted"
+                                    app:arc_finished_color="@color/green"
+                                    app:arc_max="4"
+                                    app:arc_progress="2"
+                                    app:arc_suffix_text=" "
+                                    app:arc_unfinished_color="#fff" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1"
+                                    android:text="Moderate"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold"
+                                    android:typeface="monospace" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_gravity="end"
+                                android:id="@+id/l_mod"
+                                android:background="#cfd8dc"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="20dp"
+                                    android:src="@drawable/ic_moderate"
+                                    android:tint="@color/blue" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/bt_manage_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#263238"
+            android:text="Manage Permissions"
+            android:textColor="#fff" />
+    </RelativeLayout>
+</LinearLayout>
